@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    
+    , initial-scale=1.0">
+    <title>Cardel_IP_Act1
+    </title>
+</head>
+
+<script>
+    function content(name, gra1, gra2, gra3, gra4, gra5){
+            var textName = document.getElementById('name').value;
+            var grade1 = document.getElementById('gra1').value;
+            var grade2 = document.getElementById('gra2').value;
+            var grade3 = document.getElementById('gra3').value;
+            var grade4 = document.getElementById('gra4').value;
+            var grade5 = document.getElementById('gra5').value;
+
+            var gradeSum= Number(grade1) + Number(grade2) + Number(grade3) + Number(grade4) + Number(grade5);
+            var gradeAve=gradeSum/5;
+            alert("Name: "+ textName+ "\nGRADES\n" + "IPI: "+grade1 + "\nIM1: " + grade2+ "\nOOP: " + grade3 + "\nEDP: " + grade4 + "\nHC2: " + grade5 + "\nAverage: "+ gradeAve);
+    }
+</script>
+
+<body>
+
+        <style>
+            button{
+                background-color: rgb(0, 73, 22);
+                color: azure;
+            }
+            input{
+                background-color: aqua;
+                width: 30px;
+            }
+            input#name{
+                width: 150px;
+            }
+        </style>
+
+      <b>Name: </b>
+            <input type=" text" id="name"><br><br>
+      <b>Grades</b><br>
+      <b>I P I :</b>
+            <input type="number" id="gra1">
+      <br>
+      <b>IM1 :</b>
+            <input type="number" id="gra2">
+      <br>
+      <b>OOP:</b>
+            <input type="number" id="gra3">
+      <br>
+      <b>EDP :</b>
+            <input type="number" id="gra4">
+      <br>
+      <b>HC2 :</b>
+            <input type="number" id="gra5">
+      <br><br>
+
+<button onclick="content(name, gra1, gra2, gra3, gra4, gra5)">COMPUTE</button>
+
+
+
+</body>
+</html>
